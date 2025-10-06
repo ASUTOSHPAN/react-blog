@@ -1,7 +1,9 @@
 import './App.css'
-import Dog from './Dog'
+import Counter from './counter'
+import Dog, { Button } from './Dog'
 import Header from './header'
-import Login,{Profile,Setting, Userkey} from './UserComponent'
+import State from './state'
+import Login,{Profile,Setting, Userkey,} from './UserComponent'
 
 function App() {
   return (
@@ -12,7 +14,12 @@ function App() {
     <Profile/>
    <Setting/>
    <h1>{Userkey}</h1>
+   <hr />
    <Dog/>
+   <Button/>
+   <hr />
+   <State/>
+   <Counter/>
     </>
   )
 }
