@@ -3,6 +3,7 @@ import Counter from './counter'
 import Dog, { Button } from './Dog'
 import Header from './header'
 import State from './state'
+import Toggle from './toggle'
 import Login,{Profile,Setting, Userkey,} from './UserComponent'
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
    <hr />
    <State/>
    <Counter/>
+   <hr />
+   <Toggle/>
     </>
   )
 }
