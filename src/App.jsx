@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './counter'
 import Dog, { Button } from './Dog'
 import Header from './header'
+import Condition from './multiCondition'
 import State from './state'
 import Toggle from './toggle'
 import Login,{Profile,Setting, Userkey,} from './UserComponent'
@@ -23,6 +24,8 @@ function App() {
    <Counter/>
    <hr />
    <Toggle/>
+   <hr />
+   <Condition/>
     </>
   )
 }
