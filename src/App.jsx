@@ -1,9 +1,13 @@
 import './App.css'
+import Checkbox from './checkbox'
+import Controlled from './Controlled'
 import Counter from './counter'
 import Dog, { Button } from './Dog'
 import Header from './header'
+import Input from './input'
 import Condition from './multiCondition'
 import User, { User2 } from './props'
+import Radio, { Dropdown } from './radioBtn'
 import State from './state'
 import Toggle from './toggle'
 import Login, { Profile, Setting, Userkey, } from './UserComponent'
@@ -62,6 +66,15 @@ function App() {
         <h1>Hello Admin</h1>
         <h2 style={{ color: "red" }} >Please Login</h2>
       </Wrapper>
+      <hr />
+      <Input />
+      <hr />
+      <Controlled />
+      <hr />
+      <Checkbox/>
+      <hr />
+      <Radio/>
+      <Dropdown/>
     </>
   )
 }
