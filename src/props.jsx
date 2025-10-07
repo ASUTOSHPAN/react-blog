@@ -10,3 +10,12 @@ function  User({user} ){
    )
 }
 export default User;
+
+export function User2({name = "New User"}){
+    return(
+        <div>
+            <h1>React JS-Pass JSX with props #19 </h1>
+            <h2>Hii, {name}</h2>
+        </div>
+    )
+}

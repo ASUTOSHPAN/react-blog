@@ -3,21 +3,23 @@ import Counter from './counter'
 import Dog, { Button } from './Dog'
 import Header from './header'
 import Condition from './multiCondition'
-import User from './props'
+import User, { User2 } from './props'
 import State from './state'
 import Toggle from './toggle'
 import Login, { Profile, Setting, Userkey, } from './UserComponent'
+import Wrapper from './Wrapper'
 
-     let userObj = {
-        name:"Asutosh Panda",
-      age:21,
-      address:"Bbsr"
-      };
-      let userObj2={
-        name:"Anjali Dash",
-      age:21,
-      address:"BBSR"
+let userObj = {
+  name: "Asutosh Panda",
+  age: 21,
+  address: "Bbsr"
 };
+let userObj2 = {
+  name: "Anjali Dash",
+  age: 21,
+  address: "BBSR"
+};
+
 function App() {
   return (
     <>
@@ -39,9 +41,27 @@ function App() {
       <Condition />
       <hr />
       {/* <User name="Asutosh" age={21} address="Bhubaneswar" /> */}
- 
-<User user = {userObj}/>
-<User user={userObj2} />
+
+      <User user={userObj} />
+      <User user={userObj2} />
+      <hr />
+      <User2 name="Asutosh" />
+      <User2 />
+      <User2 />
+      <Wrapper color="orange" >
+        <h1>Hello EveryOne</h1>
+      </Wrapper>
+      <Wrapper color='yellow' >
+        <h1>Hello Asutosh</h1>
+      </Wrapper>
+      <Wrapper>
+        <h1>Hello Admin</h1>
+        <h2 style={{ color: "red" }} >Please Login</h2>
+      </Wrapper>
+      <Wrapper>
+        <h1>Hello Admin</h1>
+        <h2 style={{ color: "red" }} >Please Login</h2>
+      </Wrapper>
     </>
   )
 }
