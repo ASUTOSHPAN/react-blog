@@ -90,8 +90,8 @@ export function Reuse() {
             <h1>Reuse Component in JS #25</h1>
             {
                 userData.map((user) => (
-                    <div key={user.id1}>                      
-                        <Reuse2 data={user}/>
+                    <div key={user.id1}>
+                        <Reuse2 data={user} />
                     </div>
                 ))
             }
