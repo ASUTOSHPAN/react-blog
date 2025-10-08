@@ -5,6 +5,7 @@ import Counter from './counter'
 import Dog, { Button } from './Dog'
 import Header from './header'
 import Input from './input'
+import Loop, { Reuse } from './loop'
 import Condition from './multiCondition'
 import User, { User2 } from './props'
 import Radio, { Dropdown } from './radioBtn'
@@ -71,10 +72,14 @@ function App() {
       <hr />
       <Controlled />
       <hr />
-      <Checkbox/>
+      <Checkbox />
       <hr />
-      <Radio/>
-      <Dropdown/>
+      <Radio />
+      <Dropdown />
+      <hr />
+      <Loop />
+      <hr />
+      <Reuse/>
     </>
   )
 }

@@ -7,7 +7,7 @@ let Counter = () => {
         setCount(count + 1);
     }
     let handleRCount = () => {
-        setRCount(rCount --);
+        setRCount(rCount--);
     }
     return (
         <>

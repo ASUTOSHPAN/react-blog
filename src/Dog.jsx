@@ -12,10 +12,10 @@ function Dog() {
             <button onClick={() => alert("Button has Clicked now!")}>Click Me!</button>
         </>
     )
-}                                           
- export function Button(){
-    return(
-        <button onClick={()=> alert("Banana")}>Banana</button>
+}
+export function Button() {
+    return (
+        <button onClick={() => alert("Banana")}>Banana</button>
     )
 }
 export default Dog;
