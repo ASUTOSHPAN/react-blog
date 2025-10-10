@@ -1,5 +1,6 @@
 import './App.css'
 import Checkbox from './checkbox'
+import Class28 from './class28'
 import Controlled from './Controlled'
 import Counter from './counter'
 import Dog, { Button } from './Dog'
@@ -7,6 +8,7 @@ import Header from './header'
 import Input from './input'
 import Loop, { Reuse } from './loop'
 import Condition from './multiCondition'
+import Nested from './nestedLoop'
 import User, { User2 } from './props'
 import Radio, { Dropdown } from './radioBtn'
 import State from './state'
@@ -79,7 +81,12 @@ function App() {
       <hr />
       <Loop />
       <hr />
-      <Reuse/>
+      <Reuse />
+      <hr />
+      <Nested />
+      <hr />
+      <Class28/>
+
     </>
   )
 }

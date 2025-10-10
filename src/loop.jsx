@@ -86,7 +86,7 @@ export function Reuse() {
         }
     ]
     return (
-        <div>
+        <div key={Reuse}>
             <h1>Reuse Component in JS #25</h1>
             {
                 userData.map((user) => (
