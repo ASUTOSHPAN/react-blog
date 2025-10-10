@@ -6,7 +6,7 @@ export function Class28(){
 
       useEffect(()=>{
         CallOnce();
-      },[count]);
+      },[]);
       useEffect(()=>{
         Call();
       },[data])
@@ -26,7 +26,7 @@ export function Class28(){
 
     return(
         <div>
-            <h1>use of UseEffect hook in React JS</h1>
+            <h1>use of UseEffect hook in React JS #28</h1>
            <button onClick={()=>setCount(count +1)}>Counter{count}</button>
            <button onClick={()=>setData(data +1)}>Data{data}</button>
         </div>

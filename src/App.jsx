@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import './App.css'
 import Checkbox from './checkbox'
 import Class28 from './class28'
+import Class29 from './class29'
+import Class30 from './Class30'
 import Controlled from './Controlled'
 import Counter from './counter'
 import Dog, { Button } from './Dog'
@@ -28,6 +31,7 @@ let userObj2 = {
 };
 
 function App() {
+  let[toggle,setToggle]=useState(true);
   return (
     <>
       <h1>Hello, JavaScript</h1>
@@ -85,8 +89,15 @@ function App() {
       <hr />
       <Nested />
       <hr />
-      <Class28/>
-
+      <Class28 />
+      <hr />
+      <Class29 />
+      <hr />
+    
+      {
+        toggle?<Class30 />:<h3> "The Class -30 is null"</h3>
+      }
+      <button onClick={()=>setToggle(!toggle)}>Toggle BTN</button>
     </>
   )
 }
