@@ -18,6 +18,7 @@ import State from './state'
 import Toggle from './toggle'
 import Login, { Profile, Setting, Userkey, } from './UserComponent'
 import Wrapper from './Wrapper'
+import Class32 from './Class32'
 
 let userObj = {
   name: "Asutosh Panda",
@@ -31,7 +32,7 @@ let userObj2 = {
 };
 
 function App() {
-  let[toggle,setToggle]=useState(true);
+  let [toggle, setToggle] = useState(true);
   return (
     <>
       <h1>Hello, JavaScript</h1>
@@ -93,11 +94,12 @@ function App() {
       <hr />
       <Class29 />
       <hr />
-    
       {
-        toggle?<Class30 />:<h3> "The Class -30 is null"</h3>
+        toggle ? <Class30 /> : <h3> "The Class -30 is null"</h3>
       }
-      <button onClick={()=>setToggle(!toggle)}>Toggle BTN</button>
+      <button onClick={() => setToggle(!toggle)}>Toggle BTN</button>
+      <hr />
+      <Class32 />
     </>
   )
 }
