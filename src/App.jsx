@@ -20,6 +20,7 @@ import Login, { Profile, Setting, Userkey, } from './UserComponent'
 import Wrapper from './Wrapper'
 import Class32 from './Class32'
 import Class33 from './class33'
+import Class34 from './class34'
 
 
 let userObj = {
@@ -37,7 +38,7 @@ function App() {
   let [toggle, setToggle] = useState(true);
   return (
     <>
-       <h1>Hello, JavaScript</h1>
+      <h1>Hello, JavaScript</h1>
       <Header />
       <Login />
       <Profile />
@@ -100,10 +101,12 @@ function App() {
         toggle ? <Class30 /> : <h3> "The Class -30 is null"</h3>
       }
       <button onClick={() => setToggle(!toggle)}>Toggle BTN</button>
-      <hr /> 
-      <Class32 /> 
       <hr />
-      <Class33 /><hr />
+      <Class32 />
+      <hr />
+      <Class33 />
+      <hr />
+      <Class34 />
     </>
   )
 }
