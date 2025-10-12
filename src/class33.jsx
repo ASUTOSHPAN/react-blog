@@ -20,8 +20,8 @@ function Class33() {
             <h1>Dynamic Inline Style #33</h1>
             <button style={{ backgroundColor: "blue", padding: "6px", borderRadius: "6px", margin: "10px", fontWeight: "600" }} onClick={() => updateTheme("grey", "black", "20px")}>Update Theme</button>
             <button style={{ backgroundColor: "red", padding: "6px", borderRadius: "6px", margin: "10px", fontWeight: "600" }} onClick={() => updateTheme("black", "white")}>Default Theme</button>
-            <button style={{ backgroundColor: "grey", padding: "6px", margin: "10px", borderRadius: "10px" }} onClick={()=>setGrid(!grid)}>Change Style</button>
-            < div style={{display:grid?"flex":"block",flexWrap:"wrap"}}>
+            <button style={{ backgroundColor: "grey", padding: "6px", margin: "10px", borderRadius: "10px" }} onClick={() => setGrid(!grid)}>Change Style</button>
+            < div style={{ display: grid ? "flex" : "block", flexWrap: "wrap" }}>
                 <div style={cardStyle}>
                     <img src="My-Pic.jpg" alt="My Pic" style={{ width: '200px', border: "1px solid grey", borderRadius: "10px" }} />
                     <div>

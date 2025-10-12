@@ -7,9 +7,9 @@ function Class30() {
 
     const cardStyle = {
         border: "1px solid grey",
-        textAlign:"center",
-        padding:"10px",
-        margin:"10px",
+        textAlign: "center",
+        padding: "10px",
+        margin: "10px",
         width: "230px",
         borderRadius: "10px"
     }
@@ -80,27 +80,27 @@ function Class30() {
                         <h3>Software Developer</h3>
                     </div>
                 </div>
-                 <div style={cardStyle}>
-                <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
-                <div style={{border:"1px soild green"}}>
-                    <h3>Asutosh Panda</h3>
-                    <h3>Software Developer</h3>
+                <div style={cardStyle}>
+                    <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
+                    <div style={{ border: "1px soild green" }}>
+                        <h3>Asutosh Panda</h3>
+                        <h3>Software Developer</h3>
+                    </div>
                 </div>
-            </div>
-             <div style={cardStyle}>
-                <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
-                <div style={{border:"1px soild green"}}>
-                    <h3>Asutosh Panda</h3>
-                    <h3>Software Developer</h3>
+                <div style={cardStyle}>
+                    <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
+                    <div style={{ border: "1px soild green" }}>
+                        <h3>Asutosh Panda</h3>
+                        <h3>Software Developer</h3>
+                    </div>
                 </div>
-            </div>
-             <div style={cardStyle}>
-                <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
-                <div style={{border:"1px soild green"}}>
-                    <h3>Asutosh Panda</h3>
-                    <h3>Software Developer</h3>
+                <div style={cardStyle}>
+                    <img style={imgStyle} src="My-Pic.jpg" alt="My Pic" />
+                    <div style={{ border: "1px soild green" }}>
+                        <h3>Asutosh Panda</h3>
+                        <h3>Software Developer</h3>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     )
