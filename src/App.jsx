@@ -21,6 +21,7 @@ import Wrapper from './Wrapper'
 import Class32 from './Class32'
 import Class33 from './class33'
 import Class34 from './class34'
+import UserProfile from './userProfile'
 
 
 let userObj = {
@@ -38,7 +39,7 @@ function App() {
   let [toggle, setToggle] = useState(true);
   return (
     <>
-      <h1>Hello, JavaScript</h1>
+      {/* <h1>Hello, JavaScript</h1>
       <Header />
       <Login />
       <Profile />
@@ -54,10 +55,10 @@ function App() {
       <Toggle />
       <hr />
       <Condition />
-      <hr />
+      <hr /> */}
       {/* <User name="Asutosh" age={21} address="Bhubaneswar" /> */}
 
-      <User user={userObj} />
+      {/* <User user={userObj} />
       <User user={userObj2} />
       <hr />
       <User2 name="Asutosh" />
@@ -106,7 +107,9 @@ function App() {
       <hr />
       <Class33 />
       <hr />
-      <Class34 />
+      <Class34 /> */}
+      <hr />
+      <UserProfile />
     </>
   )
 }
