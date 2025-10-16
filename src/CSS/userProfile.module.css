@@ -1,14 +1,16 @@
-.heading{
+.heading {
     color: yellow;
     text-align: center;
 }
-.img{
+
+.img {
     height: 200px;
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.7);
 }
-.container{
+
+.container {
     width: 210px;
     border: 1px solid grey;
     border-radius: 10px;

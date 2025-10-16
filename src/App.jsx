@@ -22,6 +22,9 @@ import Class32 from './Class32'
 import Class33 from './class33'
 import Class34 from './class34'
 import UserProfile from './userProfile'
+import Class38 from './class38'
+import Class39 from './class39'
+import Class40 from './class40'
 
 
 let userObj = {
@@ -37,6 +40,12 @@ let userObj2 = {
 
 function App() {
   let [toggle, setToggle] = useState(true);
+
+  // Pass function in Component as Props #40
+  const displayName=(name)=>{
+    alert(name)
+  }
+  
   return (
     <>
       {/* <h1>Hello, JavaScript</h1>
@@ -107,9 +116,18 @@ function App() {
       <hr />
       <Class33 />
       <hr />
-      <Class34 /> */}
+      <Class34 /> 
       <hr />
       <UserProfile />
+      <hr />
+      <Class38/>
+      <hr />*/}
+      <Class39/>
+      <hr />
+     <h1>Call Parent Component Function from child Component.</h1>
+     <Class40 display={displayName} name="Asu"/>
+      <Class40 display={displayName}name = "Anju"/>
+       <Class40 display={displayName}name ="Mami"/>
     </>
   )
 }
