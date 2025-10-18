@@ -25,6 +25,8 @@ import UserProfile from './userProfile'
 import Class38 from './class38'
 import Class39 from './class39'
 import Class40 from './class40'
+import Class40Two from './class40(2)'
+import Class41 from './class41'
 
 
 let userObj = {
@@ -121,13 +123,17 @@ function App() {
       <UserProfile />
       <hr />
       <Class38/>
-      <hr />*/}
+      <hr />
       <Class39/>
       <hr />
      <h1>Call Parent Component Function from child Component.</h1>
      <Class40 display={displayName} name="Asu"/>
       <Class40 display={displayName}name = "Anju"/>
        <Class40 display={displayName}name ="Mami"/>
+       <hr />
+       <Class40Two/>
+       <hr />*/}
+       <Class41/>
     </>
   )
 }
