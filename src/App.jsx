@@ -26,8 +26,6 @@ import Class38 from './class38'
 import Class39 from './class39'
 import Class40 from './class40'
 import Class40Two from './class40(2)'
-import Class41 from './class41'
-
 
 let userObj = {
   name: "Asutosh Panda",
@@ -50,7 +48,7 @@ function App() {
   
   return (
     <>
-      {/* <h1>Hello, JavaScript</h1>
+      <h1>Hello, JavaScript</h1>
       <Header />
       <Login />
       <Profile />
@@ -66,10 +64,9 @@ function App() {
       <Toggle />
       <hr />
       <Condition />
-      <hr /> */}
-      {/* <User name="Asutosh" age={21} address="Bhubaneswar" /> */}
-
-      {/* <User user={userObj} />
+      <hr /> 
+      <User name="Asutosh" age={21} address="Bhubaneswar" />
+      <User user={userObj} />
       <User user={userObj2} />
       <hr />
       <User2 name="Asutosh" />
@@ -132,8 +129,6 @@ function App() {
        <Class40 display={displayName}name ="Mami"/>
        <hr />
        <Class40Two/>
-       <hr />*/}
-       <Class41/>
     </>
   )
 }
