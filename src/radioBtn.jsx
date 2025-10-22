@@ -25,7 +25,7 @@ export function Dropdown() {
             <h3>Select your City:</h3>
             <select style={{ border: "none", padding: '10px', borderRadius: '10px' }} onChange={(event) => setCity(event.target.value)}>
                 <option value="Bhubaneswar" >Bhubaneswar</option>
-                <option value="Cuttack" selected>Cuttack</option>
+                <option value="Cuttack">Cuttack</option>
                 <option value="Puri">Puri</option>
                 <option value="Nayagarh">Nayagarh</option>
                 <option value="Jajpur">Jajpur</option>

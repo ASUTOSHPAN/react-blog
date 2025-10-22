@@ -26,6 +26,18 @@ import Class38 from './class38'
 import Class39 from './class39'
 import Class40 from './class40'
 import Class40Two from './class40(2)'
+import Class41 from './class41'
+import Class42 from './class42'
+import Class43 from './class43'
+import Class44 from './class44'
+import Class45 from './CLASS45.JSX'
+import AddUser from './class45Two'
+import Class46 from './class46'
+import Class47 from './class47'
+import Class48 from './class48'
+import College from './college'
+import { SubjectContext } from './ContextData'
+
 
 let userObj = {
   name: "Asutosh Panda",
@@ -39,17 +51,30 @@ let userObj2 = {
 };
 
 function App() {
+  const[subject,setSubject]=useState("English")
+  const [user, setUser] = useState("");//Import from Class45.........
   let [toggle, setToggle] = useState(true);
 
   // Pass function in Component as Props #40
-  const displayName=(name)=>{
+  const displayName = (name) => {
     alert(name)
   }
-  
+
   return (
-    <>
-      <h1>Hello, JavaScript</h1>
-      <Header />
+    <div style={{ backgroundColor: "yellow", color: "black", padding: "10px" }}>
+      <SubjectContext.Provider value={subject}>
+        <select onChange={(event)=>setSubject(event.target.value)}>
+          <option value="">Select Subject</option>
+          <option value="Math">Math</option>
+          <option value="English">English</option>
+          <option value="Odia">Odia</option>
+          <option value="Science">Science</option>
+        </select>
+        <button onClick={()=>setSubject("")}>Clear</button>
+        <h1>Context API</h1>
+        <College />
+      </SubjectContext.Provider>
+      {/*  <Header />
       <Login />
       <Profile />
       <Setting />
@@ -65,11 +90,11 @@ function App() {
       <hr />
       <Condition />
       <hr /> 
-      <User name="Asutosh" age={21} address="Bhubaneswar" />
+      {/* <User name="Asutosh" age={21} address="Bhubaneswar" />
       <User user={userObj} />
-      <User user={userObj2} />
+      <User user={userObj2} /> */}
       <hr />
-      <User2 name="Asutosh" />
+      {/* <User2 name="Asutosh" />
       <User2 />
       <User2 />
       <Wrapper color="orange" >
@@ -129,7 +154,25 @@ function App() {
        <Class40 display={displayName}name ="Mami"/>
        <hr />
        <Class40Two/>
-    </>
+       <hr /> 
+       <Class41/>
+       <hr />
+       <Class42/>
+       <hr />
+       <Class43/>
+       <hr /> 
+      <Class44 />
+      <hr />
+      <Class45 setUser={setUser}/>
+      <AddUser user={user}/>
+      <hr />
+      <Class46 />
+      <hr />
+      <Class47/>
+      <hr />
+      <Class48/>*/}
+
+    </div>
   )
 }
 export default App;
